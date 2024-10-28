@@ -42,11 +42,16 @@ class Area {
     }
 
     #clickPoint(event) {
+        // todo: add isSettingRadius check
         let point = event.currentTarget.createSVGPoint();
         point.x = event.clientX;
         point.y = event.clientY;
         point = point.matrixTransform(event.currentTarget.getScreenCTM().inverse());
-        console.log(point.x, point.y);
+        const width = event.currentTarget.getBBox().width;
+        const height = event.currentTarget.getBBox().height;
+        let x = point.x * 6 / width - 3;
+        let y = point.y * 6 / height - 3;
+        console.log(x, y);
         return point;
     }
 }

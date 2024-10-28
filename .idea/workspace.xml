@@ -12,12 +12,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee2343a1-c66d-44e7-aaba-6adbede48591" name="Changes" comment="refactor">
+    <list default="true" id="ee2343a1-c66d-44e7-aaba-6adbede48591" name="Changes" comment="feat: add scaling area">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/graph.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/graph.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/script/area.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/script/area.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/script/validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/script/validator.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/css/graph.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style/css/graph.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -191,7 +188,7 @@
       <updated>1729434870485</updated>
       <workItem from="1729434871417" duration="908000" />
       <workItem from="1729450674155" duration="48600000" />
-      <workItem from="1730127209488" duration="15656000" />
+      <workItem from="1730127209488" duration="16360000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -217,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730143950527</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat: add scaling area">
+      <option name="closed" value="true" />
+      <created>1730147385753</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730147385753</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,7 +232,8 @@
     <MESSAGE value="init commit" />
     <MESSAGE value="feat: create graph.jsp" />
     <MESSAGE value="refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
+    <MESSAGE value="feat: add scaling area" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add scaling area" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
