@@ -1,7 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-<svg id="graph" height=${param.height} width=${param.width} xmlns="http://www.w3.org/2000/svg">
+<svg class="graph" height=${param.height} width=${param.width} xmlns="http://www.w3.org/2000/svg">
     <!-- figure -->
     <path class="area" transform="translate(${param.width / 2}, ${param.height/ 2}) scale(2, 2)"
           d="m -${param.width * 0.5 / 6} 0
@@ -30,12 +30,25 @@
     <!-- lines on lines -->
     <c:forEach var="label" items="-R -2,-R/2 -1, ,R/2 1,R 2" varStatus="counter">
         <line x1=${param.width * counter.count / 6} y1=${param.height / 2 - 4} x2=${param.width * counter.count / 6} y2=${param.height / 2 + 4}></line>
-        <text class="default" x=${param.width * counter.count / 6 - 5} y=${param.height / 2 - 10}>${label.split(" ")[0]}</text>
-        <text class="scale" x=${param.width * counter.count / 6 - 5} y=${param.height / 2 - 10}>${label.split(" ")[1]}</text>
+        <text class="default" x=${param.width * counter.count / 6 - 5} y=${param.height / 2 - 10}
+              visibility="visible">
+                ${label.split(" ")[0]}
+        </text>
+        <text class="scale"
+              x=${param.width * counter.count / 6 - 5} y=${param.height / 2 - 10}
+              visibility="hidden">
+                ${label.split(" ")[1]}
+        </text>
     </c:forEach>
     <c:forEach var="label" items="R 2,R/2 1, ,-R/2 -1,-R -2" varStatus="counter">
         <line x1=${param.width / 2 - 4} y1=${param.height * counter.count / 6} x2=${param.width / 2 + 4} y2=${param.height * counter.count / 6}></line>
-        <text class="default" x=${param.width / 2 + 10} y=${param.height * counter.count / 6 + 4}>${label.split(" ")[0]}</text>
-        <text class="scale" x=${param.width / 2 + 10} y=${param.height * counter.count / 6 + 4}>${label.split(" ")[1]}</text>
+        <text class="default" x=${param.width / 2 + 10} y=${param.height * counter.count / 6 + 4}
+              visibility="visible">
+                ${label.split(" ")[0]}
+        </text>
+        <text class="scale" x=${param.width / 2 + 10} y=${param.height * counter.count / 6 + 4}
+              visibility="hidden">
+                ${label.split(" ")[1]}
+        </text>
     </c:forEach>
 </svg>

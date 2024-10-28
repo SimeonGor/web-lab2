@@ -29,11 +29,3 @@
 .graph-container text {
     font-size: 1em;
 }
-
-.graph-container .default {
-    visibility: visible;
-}
-
-.graph-container .scale {
-    visibility: hidden;
-}

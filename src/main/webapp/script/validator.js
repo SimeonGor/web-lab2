@@ -1,8 +1,9 @@
+'use strict';
+
 document.addEventListener("DOMContentLoaded", main);
 
 function main() {
     let yField = document.getElementById("y-input");
-    console.log(yField);
     yField.onchange = validConstraint;
 }
 
