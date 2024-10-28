@@ -14,14 +14,26 @@
     fill: #76E2F4;
 }
 
-.graph-container #point {
+.graph-container .point {
     fill: #301781;
     stroke: #301781;
 }
 
 .graph-container line,
 .graph-container polygon,
-.graph-container text{
+.graph-container text {
     stroke: #301781;
     fill: #301781;
+}
+
+.graph-container text {
+    font-size: 1em;
+}
+
+.graph-container .default {
+    visibility: visible;
+}
+
+.graph-container .scale {
+    visibility: hidden;
 }

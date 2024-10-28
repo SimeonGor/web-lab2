@@ -15,14 +15,10 @@ class Area {
                 this.#path = i;
             }
         }
-        this.paint({x: 0, y: 0, width: 100, height: 100});
     }
 
-    paint(r) {
-        let width = this.#element.width
-        let height = this.#element.height
-        this.#path.setAttribute("d",
-            "M100 150 l 0 100 l 50 0 l 0 -100 l 100 0 a 100 100 0 0 0 -100 -100 l -50 100 Z");
+    setR(r) {
+
     }
 
     #clickPoint(event) {
