@@ -29,3 +29,13 @@
 .graph-container text {
     font-size: 1em;
 }
+
+.graph-container .point[hit=true] {
+    fill: #615DEC;
+    stroke: #615DEC;
+}
+
+.graph-container .point[hit=false] {
+    fill: red;
+    stroke: red;
+}
