@@ -12,8 +12,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee2343a1-c66d-44e7-aaba-6adbede48591" name="Changes" comment="feat: add area click event">
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/graph.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/graph.jsp" afterDir="false" />
+    <list default="true" id="ee2343a1-c66d-44e7-aaba-6adbede48591" name="Changes" comment="feat: add check points with color">
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,6 +30,7 @@
         <option value="Class" />
         <option value="JavaScript File" />
         <option value="Jsp File" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -53,7 +56,7 @@
     </option>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -187,7 +190,7 @@
       <updated>1729434870485</updated>
       <workItem from="1729434871417" duration="908000" />
       <workItem from="1729450674155" duration="48600000" />
-      <workItem from="1730127209488" duration="16718000" />
+      <workItem from="1730127209488" duration="25815000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -229,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730147980561</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: add check points with color">
+      <option name="closed" value="true" />
+      <created>1730148383945</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730148383945</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,7 +252,8 @@
     <MESSAGE value="refactor" />
     <MESSAGE value="feat: add scaling area" />
     <MESSAGE value="feat: add area click event" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add area click event" />
+    <MESSAGE value="feat: add check points with color" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add check points with color" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
