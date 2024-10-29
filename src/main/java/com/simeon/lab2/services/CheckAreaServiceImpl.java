@@ -1,7 +1,10 @@
 package com.simeon.lab2.services;
 
+import jakarta.enterprise.inject.Model;
+
 import java.math.BigDecimal;
 
+@Model
 public class CheckAreaServiceImpl implements CheckAreaService {
     @Override
     public boolean check(BigDecimal x, BigDecimal y, BigDecimal r) {
