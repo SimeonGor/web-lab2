@@ -4,7 +4,12 @@
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
 
-    <servlet>
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+
+<servlet>
         <servlet-name>Dispatcher</servlet-name>
         <servlet-class>com.simeon.lab2.ControllerServlet</servlet-class>
     </servlet>
