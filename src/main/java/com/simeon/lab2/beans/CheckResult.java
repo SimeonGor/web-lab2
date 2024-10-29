@@ -4,6 +4,7 @@ import java.io.Serial;
 import java.io.Serializable;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 public class CheckResult implements Serializable {
     @Serial
@@ -73,5 +74,35 @@ public class CheckResult implements Serializable {
 
     public void setCreatedAt(LocalDateTime createdAt) {
         this.createdAt = createdAt;
+    }
+
+    @Override
+    public String toString() {
+        return "CheckResult{" +
+                "x=" + x +
+                ", y=" + y +
+                ", r=" + r +
+                ", hit=" + hit +
+                ", workingTime=" + workingTime +
+                ", createdAt=" + createdAt +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        CheckResult that = (CheckResult) o;
+        return hit == that.hit
+                && workingTime == that.workingTime
+                && Objects.equals(x, that.x)
+                && Objects.equals(y, that.y)
+                && Objects.equals(r, that.r)
+                && Objects.equals(createdAt, that.createdAt);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(x, y, r, hit, workingTime, createdAt);
     }
 }
