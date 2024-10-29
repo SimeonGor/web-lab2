@@ -38,7 +38,7 @@
                     <label>
                         <select name="x" required>
                             <option value="" disabled>--select x--</option>
-                            <c:forEach var="x" items=" -5, -4, -3, -2, -1, 0, 1, 2, 3 ">
+                            <c:forEach var="x" items="-5,-4,-3,-2,-1,0,1,2,3">
                                 <option value="${x}">${x}</option>
                             </c:forEach>
                         </select>
