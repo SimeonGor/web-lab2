@@ -1,7 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 
-<link href="style/css/table.css" rel="stylesheet" type="text/css" />
 <div class="table">
     <!-- check table -->
     <table id="check-table" class="table-check">

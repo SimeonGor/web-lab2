@@ -9,9 +9,11 @@
 
     <title>Checker</title>
 
+    <link href="style/css/header.css" rel="stylesheet" type="text/css" />
     <link href="style/css/main.css" rel="stylesheet" type="text/css" />
     <link href="style/css/graph.css" rel="stylesheet" type="text/css" />
     <link href="style/css/form.css" rel="stylesheet" type="text/css" />
+    <link href="style/css/table.css" rel="stylesheet" type="text/css" />
 
 
 </head>

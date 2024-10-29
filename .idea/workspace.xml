@@ -12,10 +12,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee2343a1-c66d-44e7-aaba-6adbede48591" name="Changes" comment="feat: update click event">
+    <list default="true" id="ee2343a1-c66d-44e7-aaba-6adbede48591" name="Changes" comment="feat: add redirect click event">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/graph.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/graph.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/script/area.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/script/area.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simeon/lab2/ModelMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/check.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/check.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/header.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/header.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/table.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/table.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,7 +193,7 @@
       <updated>1729434870485</updated>
       <workItem from="1729434871417" duration="908000" />
       <workItem from="1729450674155" duration="48600000" />
-      <workItem from="1730127209488" duration="28634000" />
+      <workItem from="1730127209488" duration="33407000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -272,11 +275,30 @@
       <option name="project" value="LOCAL" />
       <updated>1730212604036</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat: add redirect click event">
+      <option name="closed" value="true" />
+      <created>1730213288304</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1730213288304</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
@@ -289,7 +311,8 @@
     <MESSAGE value="feat: add dockerfile (does not work)" />
     <MESSAGE value="feat: change dockerfile" />
     <MESSAGE value="feat: update click event" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update click event" />
+    <MESSAGE value="feat: add redirect click event" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add redirect click event" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,9 +1,10 @@
 <%@ page contentType="text/html;charset=UTF-8" %>
-<link href="style/css/header.css" rel="stylesheet" type="text/css" />
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
 <header>
   <div>
     <a href="https://github.com/SimeonGor">
-      <img alt="Poo" src="img/logo.png">
+      <img alt="Poo" src='<c:url value="/img/logo.png" />' >
     </a>
   </div>
   <div class="student-details">
