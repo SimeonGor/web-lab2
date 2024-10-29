@@ -12,7 +12,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee2343a1-c66d-44e7-aaba-6adbede48591" name="Changes" comment="feat: change dockerfile">
+    <list default="true" id="ee2343a1-c66d-44e7-aaba-6adbede48591" name="Changes" comment="feat: update click event">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/graph.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/graph.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/script/area.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/script/area.js" afterDir="false" />
@@ -190,7 +190,7 @@
       <updated>1729434870485</updated>
       <workItem from="1729434871417" duration="908000" />
       <workItem from="1729450674155" duration="48600000" />
-      <workItem from="1730127209488" duration="27948000" />
+      <workItem from="1730127209488" duration="28634000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -264,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730211055910</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat: update click event">
+      <option name="closed" value="true" />
+      <created>1730212604036</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1730212604036</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,7 +288,8 @@
     <MESSAGE value="feat: add docker compose configuration" />
     <MESSAGE value="feat: add dockerfile (does not work)" />
     <MESSAGE value="feat: change dockerfile" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: change dockerfile" />
+    <MESSAGE value="feat: update click event" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update click event" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

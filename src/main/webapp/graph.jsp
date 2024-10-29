@@ -54,6 +54,8 @@
 
     <jsp:useBean id="history" scope="session" class="com.simeon.lab2.beans.History"/>
     <c:forEach var="entity" items="${history.resultList}">
-        <circle class="point" r="5" cx=${entity.x} cy=${entity.y} hit="${entity.hit}"></circle>
+        <circle class="point" r="5"
+                cx=${(entity.x + 3) * param.width / 6} cy=${(3 - entity.y) * param.height / 6}
+                hit="${entity.hit}"></circle>
     </c:forEach>
 </svg>

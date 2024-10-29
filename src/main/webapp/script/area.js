@@ -3,16 +3,21 @@
 document.addEventListener("DOMContentLoaded", () => {
     let svg = document.querySelector("svg.graph");
     let area = new Area(svg);
-    svg.addEventListener("click", (e) => {
-        let point = area.getPoint(e);
-    });
-
-    let radios = document.querySelectorAll("#coordinates-form input[type=radio][name=r]");
-    for (let radio of radios) {
+    let radius;
+    let radioList = document.querySelectorAll("#coordinates-form input[type=radio][name=r]");
+    for (let radio of radioList) {
         radio.addEventListener("change", () => {
             area.setR(radio.value);
+            radius = radio.value;
+            console.log(radius);
         });
     }
+
+    svg.addEventListener("click", (e) => {
+        let point = area.getPoint(e);
+        let url = document.querySelector("#coordinates-form").getAttribute("action");
+        window.location.href = `${url}?x=${point.x}&y=${point.y}&r=${radius}`;
+    });
 });
 
 class Area {

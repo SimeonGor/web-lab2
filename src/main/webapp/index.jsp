@@ -52,7 +52,7 @@
             <div id="r-field" class="value-input">
                 <div>
                     <label>R:</label>
-                    <c:forEach var="r" items=" 1, 1.5, 2, 2.5, 3 ">
+                    <c:forEach var="r" items="1,1.5,2,2.5,3">
                         <label class="radio-label">
                             <input type="radio" name="r" value="${r}" required>${r}
                         </label>
