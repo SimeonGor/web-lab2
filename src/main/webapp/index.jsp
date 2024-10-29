@@ -31,7 +31,7 @@
 
         </div>
 
-        <form id="coordinates-form" method="GET" action='<c:url value="/controller" />'>
+        <form id="coordinates-form" method="GET" action="${pageContext.request.contextPath}/controller">
             <div id="x-field" class="value-input">
                 <div>
                     <label>X:</label>
