@@ -12,8 +12,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee2343a1-c66d-44e7-aaba-6adbede48591" name="Changes" comment="feat: add docker compose configuration">
-      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+    <list default="true" id="ee2343a1-c66d-44e7-aaba-6adbede48591" name="Changes" comment="feat: change dockerfile">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/graph.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/graph.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/script/area.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/script/area.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,7 +190,7 @@
       <updated>1729434870485</updated>
       <workItem from="1729434871417" duration="908000" />
       <workItem from="1729450674155" duration="48600000" />
-      <workItem from="1730127209488" duration="26264000" />
+      <workItem from="1730127209488" duration="27948000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -246,7 +248,23 @@
       <option name="project" value="LOCAL" />
       <updated>1730210634521</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="feat: add dockerfile (does not work)">
+      <option name="closed" value="true" />
+      <created>1730210836638</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1730210836638</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: change dockerfile">
+      <option name="closed" value="true" />
+      <created>1730211055910</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1730211055910</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +278,9 @@
     <MESSAGE value="feat: add area click event" />
     <MESSAGE value="feat: add check points with color" />
     <MESSAGE value="feat: add docker compose configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add docker compose configuration" />
+    <MESSAGE value="feat: add dockerfile (does not work)" />
+    <MESSAGE value="feat: change dockerfile" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: change dockerfile" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

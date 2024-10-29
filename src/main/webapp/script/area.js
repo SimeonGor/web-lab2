@@ -1,7 +1,12 @@
 'use strict';
 
 document.addEventListener("DOMContentLoaded", () => {
-    let area = new Area(document.querySelector("svg.graph"));
+    let svg = document.querySelector("svg.graph");
+    let area = new Area(svg);
+    svg.addEventListener("click", (e) => {
+        let point = area.getPoint(e);
+    });
+
     let radios = document.querySelectorAll("#coordinates-form input[type=radio][name=r]");
     for (let radio of radios) {
         radio.addEventListener("change", () => {
@@ -15,7 +20,6 @@ class Area {
     #path;
     #isSettingRadius = false;
     constructor(element) {
-        element.addEventListener("click", this.#clickPoint, {});
         this.#element = element;
 
         for (let i of this.#element.children) {
@@ -27,6 +31,7 @@ class Area {
 
     setR(r) {
         if (!this.#isSettingRadius) {
+            this.#isSettingRadius = true;
             for (let i of this.#element.children) {
                 if (i.matches(".default")) {
                     i.setAttribute("visibility", "hidden");
@@ -41,18 +46,22 @@ class Area {
         this.#path.setAttribute("transform", new_transform);
     }
 
-    #clickPoint(event) {
-        // todo: add isSettingRadius check
-        let point = event.currentTarget.createSVGPoint();
+    getPoint(event) {
+        if (!this.#isSettingRadius) {
+            alert("Choose radius value");
+            return;
+        }
+        let point = this.#element.createSVGPoint();
         point.x = event.clientX;
         point.y = event.clientY;
-        point = point.matrixTransform(event.currentTarget.getScreenCTM().inverse());
-        const width = event.currentTarget.getBBox().width;
-        const height = event.currentTarget.getBBox().height;
+        point = point.matrixTransform(this.#element.getScreenCTM().inverse());
+        const width = this.#element.getBBox().width;
+        const height = this.#element.getBBox().height;
         let x = point.x * 6 / width - 3;
-        let y = point.y * 6 / height - 3;
+        let y = -(point.y * 6 / height - 3);
         console.log(x, y);
-        return point;
+
+        return {x, y};
     }
 }
 
