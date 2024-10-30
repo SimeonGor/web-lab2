@@ -9,33 +9,28 @@
     margin: 30px;
 }
 
-.graph-container .area {
+.graph .area {
     stroke: #615DEC;
     fill: #76E2F4;
 }
 
-.graph-container .point {
-    fill: #301781;
-    stroke: #301781;
-}
-
-.graph-container line,
-.graph-container polygon,
-.graph-container text {
+.graph line,
+.graph polygon,
+.graph text {
     stroke: #301781;
     fill: #301781;
 }
 
-.graph-container text {
+.graph text {
     font-size: 1em;
 }
 
-.graph-container .point[hit=true] {
+.graph .point[hit=true] {
     fill: #615DEC;
     stroke: #615DEC;
 }
 
-.graph-container .point[hit=false] {
+.graph .point[hit=false] {
     fill: red;
     stroke: red;
 }
