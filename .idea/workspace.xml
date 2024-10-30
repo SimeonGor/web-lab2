@@ -12,10 +12,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee2343a1-c66d-44e7-aaba-6adbede48591" name="Changes" comment="feat: add a style to the back button in check.jsp">
+    <list default="true" id="ee2343a1-c66d-44e7-aaba-6adbede48591" name="Changes" comment="refactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/simeon/lab2/services/CheckAreaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simeon/lab2/services/CheckAreaServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/css/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style/css/form.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,27 +66,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JBoss/WildFly Server.JBoss/WildFly 34.0.0.Final.executor": "Run",
-    "Maven.lab2 [org.jasig.maven:sass-maven-plugin:1.1.1:update-stylesheets].executor": "Run",
-    "Maven.lab2 [org.jasig.maven:sass-maven-plugin:1.1.1:watch].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/simeongor/work/web/lab2/src/main/webapp/style/css",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JBoss/WildFly Server.JBoss/WildFly 34.0.0.Final.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.lab2 [org.jasig.maven:sass-maven-plugin:1.1.1:update-stylesheets].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.lab2 [org.jasig.maven:sass-maven-plugin:1.1.1:watch].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/simeongor/work/web/lab2/src/main/webapp/style/css&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/webapp/style/css" />
@@ -193,7 +193,7 @@
       <updated>1729434870485</updated>
       <workItem from="1729434871417" duration="908000" />
       <workItem from="1729450674155" duration="48600000" />
-      <workItem from="1730127209488" duration="44979000" />
+      <workItem from="1730127209488" duration="45821000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -371,7 +371,23 @@
       <option name="project" value="LOCAL" />
       <updated>1730316241187</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="feat: change area check">
+      <option name="closed" value="true" />
+      <created>1730317028763</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1730317028763</updated>
+    </task>
+    <task id="LOCAL-00024" summary="refactor">
+      <option name="closed" value="true" />
+      <created>1730317158082</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1730317158082</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -403,14 +419,15 @@
     <MESSAGE value="feat: make java beans" />
     <MESSAGE value="fix: delete start space x input value" />
     <MESSAGE value="feat: add check area logic" />
-    <MESSAGE value="refactor" />
     <MESSAGE value="feat: hide points before choosing radius" />
     <MESSAGE value="feat: hide points before choosing radius" />
     <MESSAGE value="feat: add number and date format to table.jsp" />
     <MESSAGE value="refactor graph.css" />
     <MESSAGE value="fix js getting svg size" />
     <MESSAGE value="feat: add a style to the back button in check.jsp" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add a style to the back button in check.jsp" />
+    <MESSAGE value="feat: change area check" />
+    <MESSAGE value="refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

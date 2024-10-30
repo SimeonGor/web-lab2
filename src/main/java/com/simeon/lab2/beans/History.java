@@ -12,8 +12,6 @@ public class History implements Serializable {
 
     private final List<CheckResult> resultList = new ArrayList<>();
 
-    public History() {}
-
     public List<CheckResult> getResultList() {
         return resultList;
     }

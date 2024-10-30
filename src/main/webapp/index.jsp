@@ -34,8 +34,8 @@
         <form id="coordinates-form" method="GET" action="${pageContext.request.contextPath}/controller">
             <div id="x-field" class="value-input">
                 <div>
-                    <label>X:</label>
                     <label>
+                        X:
                         <select name="x" required>
                             <option value="" disabled>--select x--</option>
                             <c:forEach var="x" items="-5,-4,-3,-2,-1,0,1,2,3">
@@ -53,12 +53,13 @@
             </div>
             <div id="r-field" class="value-input">
                 <div>
-                    <label>R:</label>
-                    <c:forEach var="r" items="1,1.5,2,2.5,3">
-                        <label class="radio-label">
-                            <input type="radio" name="r" value="${r}" required>${r}
-                        </label>
-                    </c:forEach>
+                    <label>R:
+                        <c:forEach var="r" items="1,1.5,2,2.5,3">
+                            <label class="radio-label">
+                                <input type="radio" name="r" value="${r}" required>${r}
+                            </label>
+                        </c:forEach>
+                    </label>
                 </div>
             </div>
             <button class="submit-button" type="submit">Отправить</button>
