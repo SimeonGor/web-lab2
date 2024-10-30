@@ -3,6 +3,7 @@ package com.simeon.lab2.services;
 import jakarta.enterprise.inject.Model;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 
 @Model
 public class CheckAreaServiceImpl implements CheckAreaService {
@@ -15,21 +16,22 @@ public class CheckAreaServiceImpl implements CheckAreaService {
     }
 
     private boolean checkFirstQuarter(BigDecimal x, BigDecimal y, BigDecimal r) {
-        if (x.compareTo(new BigDecimal("0")) < 0 || y.compareTo(new BigDecimal("0")) < 0) return false;
-        return (x.multiply(x).add(y.multiply(y))).compareTo(r.multiply(r)) <= 0;
+        if (x.compareTo(BigDecimal.ZERO) < 0 || y.compareTo(BigDecimal.ZERO) < 0) return false;
+        return (x.pow(2).add(y.pow(2)).compareTo(r.pow(2))) <= 0;
     }
 
     private boolean checkSecondQuarter(BigDecimal x, BigDecimal y, BigDecimal r) {
-        return false;
+        if (x.compareTo(BigDecimal.ZERO) > 0 || y.compareTo(BigDecimal.ZERO) < 0) return false;
+        return x.multiply(BigDecimal.valueOf(2)).add(r).compareTo(y) <= 0;
+
     }
 
     private boolean checkThirdQuarter(BigDecimal x, BigDecimal y, BigDecimal r) {
         if (x.compareTo(new BigDecimal("0")) > 0 || y.compareTo(new BigDecimal("0")) > 0) return false;
-        return y.add(x).compareTo(r.negate()) >= 0;
+        return y.add(x).compareTo(r.negate()) >= 0 && x.compareTo(r.negate().divide(BigDecimal.valueOf(2), RoundingMode.UNNECESSARY)) <= 0;
     }
 
     private boolean checkForthQuarter(BigDecimal x, BigDecimal y, BigDecimal r) {
-        if (x.compareTo(new BigDecimal("0")) < 0 || y.compareTo(new BigDecimal("0")) > 0) return false;
-        return x.compareTo(r) <= 0 && y.compareTo(r.negate()) >= 0;
+        return false;
     }
 }
