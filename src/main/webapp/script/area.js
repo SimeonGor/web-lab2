@@ -41,7 +41,7 @@ class Area {
                 if (i.matches(".default")) {
                     i.setAttribute("visibility", "hidden");
                 }
-                if (i.matches(".scale")) {
+                if (i.classList.contains("scaled")) {
                     i.setAttribute("visibility", "visible");
                 }
             }

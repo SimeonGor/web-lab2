@@ -1,5 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page import="java.math.BigDecimal" %>
+<%@ page import="com.simeon.lab2.beans.CheckResult" %>
 
 <svg class="graph" height=${param.height} width=${param.width} xmlns="http://www.w3.org/2000/svg">
     <!-- figure -->
@@ -34,7 +36,7 @@
               visibility="visible">
                 ${label.split(" ")[0]}
         </text>
-        <text class="scale"
+        <text class="scaled"
               x=${param.width * counter.count / 6 - 5} y=${param.height / 2 - 10}
               visibility="hidden">
                 ${label.split(" ")[1]}
@@ -46,7 +48,7 @@
               visibility="visible">
                 ${label.split(" ")[0]}
         </text>
-        <text class="scale" x=${param.width / 2 + 10} y=${param.height * counter.count / 6 + 4}
+        <text class="scaled" x=${param.width / 2 + 10} y=${param.height * counter.count / 6 + 4}
               visibility="hidden">
                 ${label.split(" ")[1]}
         </text>
@@ -54,8 +56,9 @@
 
     <jsp:useBean id="history" scope="session" class="com.simeon.lab2.beans.History"/>
     <c:forEach var="entity" items="${history.resultList}">
-        <circle class="point" r="5"
+        <circle class="point scaled" r="5"
                 cx=${(entity.x + 3) * param.width / 6} cy=${(3 - entity.y) * param.height / 6}
-                hit="${entity.hit}"></circle>
+                hit="${entity.hit}"
+                visibility="hidden"></circle>
     </c:forEach>
 </svg>
