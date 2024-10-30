@@ -12,10 +12,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee2343a1-c66d-44e7-aaba-6adbede48591" name="Changes" comment="fix js getting svg size">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/style/css/check.css" afterDir="false" />
+    <list default="true" id="ee2343a1-c66d-44e7-aaba-6adbede48591" name="Changes" comment="feat: add a style to the back button in check.jsp">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/check.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/check.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simeon/lab2/services/CheckAreaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simeon/lab2/services/CheckAreaServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/style/css/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/style/css/form.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,6 +84,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   }
@@ -192,7 +193,7 @@
       <updated>1729434870485</updated>
       <workItem from="1729434871417" duration="908000" />
       <workItem from="1729450674155" duration="48600000" />
-      <workItem from="1730127209488" duration="44292000" />
+      <workItem from="1730127209488" duration="44979000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -362,7 +363,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730315694843</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="feat: add a style to the back button in check.jsp">
+      <option name="closed" value="true" />
+      <created>1730316241187</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1730316241187</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -400,7 +409,8 @@
     <MESSAGE value="feat: add number and date format to table.jsp" />
     <MESSAGE value="refactor graph.css" />
     <MESSAGE value="fix js getting svg size" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix js getting svg size" />
+    <MESSAGE value="feat: add a style to the back button in check.jsp" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add a style to the back button in check.jsp" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

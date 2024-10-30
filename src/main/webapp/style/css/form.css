@@ -41,7 +41,3 @@
     display: flex;
     flex-direction: column;
 }
-
-#coordinates-form .value-input label.error {
-    font-size: 0.5em;
-}
