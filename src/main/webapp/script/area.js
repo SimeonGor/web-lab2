@@ -60,11 +60,10 @@ class Area {
         point.x = event.clientX;
         point.y = event.clientY;
         point = point.matrixTransform(this.#element.getScreenCTM().inverse());
-        const width = this.#element.getBBox().width;
-        const height = this.#element.getBBox().height;
+        let width = this.#element.getBoundingClientRect().width;
+        let height = this.#element.getBoundingClientRect().height;
         let x = point.x * 6 / width - 3;
         let y = -(point.y * 6 / height - 3);
-        console.log(x, y);
 
         return {x, y};
     }
