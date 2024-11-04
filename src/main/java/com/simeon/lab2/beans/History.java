@@ -16,11 +16,6 @@ public class History implements Serializable {
         return resultList;
     }
 
-    public void setResultList(List<CheckResult> resultList) {
-        this.resultList.clear();
-        this.resultList.addAll(resultList);
-    }
-
     public void addResult(CheckResult result) {
         resultList.add(result);
     }
