@@ -1,6 +1,8 @@
 package com.simeon.lab2.controller;
 
 import com.simeon.lab2.dto.AreaCheckRequest;
+import com.simeon.lab2.exceptions.SerializationException;
+import com.simeon.lab2.exceptions.ServerError;
 import com.simeon.lab2.services.AreaCheckService;
 import jakarta.enterprise.inject.Any;
 import jakarta.inject.Inject;
@@ -23,31 +25,38 @@ public class AreaCheckServlet extends HttpServlet {
     }
 
     @Override
-    public void doGet(HttpServletRequest request, HttpServletResponse response) {
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        try {
+            AreaCheckRequest areaCheckRequest = parseRequest(request);
+            areaCheckService.handle(areaCheckRequest);
 
-        AreaCheckRequest areaCheckRequest = parseRequest(request);
-
-        areaCheckService.handle(areaCheckRequest);
-
-        redirectToView(request, response);
+            redirectToView(request, response);
+        }
+        catch (SerializationException e) {
+            response.sendError(HttpServletResponse.SC_BAD_REQUEST);
+        }
     }
 
-    private AreaCheckRequest parseRequest(HttpServletRequest request) {
-        return new AreaCheckRequest(
-                new BigDecimal(request.getParameter("x")),
-                new BigDecimal(request.getParameter("y")),
-                new BigDecimal(request.getParameter("r"))
-        );
+    private AreaCheckRequest parseRequest(HttpServletRequest request) throws SerializationException {
+        try {
+            return new AreaCheckRequest(
+                    new BigDecimal(request.getParameter("x")),
+                    new BigDecimal(request.getParameter("y")),
+                    new BigDecimal(request.getParameter("r"))
+            );
+        }
+        catch (NumberFormatException e) {
+            throw new SerializationException("Parameters must be a number");
+        }
     }
 
     private void redirectToView(HttpServletRequest request, HttpServletResponse response) {
-        ServletContext servletContext = getServletContext();
-        RequestDispatcher dispatcher = servletContext.getRequestDispatcher("/check.jsp");
-
         try {
+            ServletContext servletContext = getServletContext();
+            RequestDispatcher dispatcher = servletContext.getRequestDispatcher("/check.jsp");
             dispatcher.forward(request, response);
         } catch (IOException | ServletException e) {
-            throw new RuntimeException(e);
+            throw new ServerError(e.getMessage());
         }
     }
 }

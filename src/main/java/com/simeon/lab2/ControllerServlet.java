@@ -17,8 +17,8 @@ public class ControllerServlet extends HttpServlet {
         if (request.getParameter("x") != null
             && request.getParameter("y") != null
             && request.getParameter("r") != null) {
-            RequestDispatcher controller = servletContext.getRequestDispatcher("/local/check");
-            controller.forward(request, response);
+                RequestDispatcher controller = servletContext.getRequestDispatcher("/local/check");
+                controller.forward(request, response);
         }
         else {
             String path = request.getContextPath() + "/index.jsp";

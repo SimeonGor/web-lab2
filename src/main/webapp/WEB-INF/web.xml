@@ -3,13 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
-
-    <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
-    </welcome-file-list>
-
-
-<servlet>
+    <servlet>
         <servlet-name>Dispatcher</servlet-name>
         <servlet-class>com.simeon.lab2.ControllerServlet</servlet-class>
     </servlet>
@@ -28,4 +22,19 @@
         <servlet-name>AreaChecker</servlet-name>
         <url-pattern>/local/check</url-pattern>
     </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>/index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <error-page>
+        <error-code>400</error-code>
+        <location>/400.jsp</location>
+    </error-page>
+
+    <error-page>
+        <exception-type>java.lang.RuntimeException</exception-type>
+        <location>/500.jsp</location>
+    </error-page>
+
 </web-app>
