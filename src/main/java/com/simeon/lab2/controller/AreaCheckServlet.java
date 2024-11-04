@@ -23,15 +23,13 @@ public class AreaCheckServlet extends HttpServlet {
     }
 
     @Override
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doGet(HttpServletRequest request, HttpServletResponse response) {
 
         AreaCheckRequest areaCheckRequest = parseRequest(request);
 
-        areaCheckService.handle(areaCheckRequest, request.getSession());
+        areaCheckService.handle(areaCheckRequest);
 
-        ServletContext servletContext = getServletContext();
-        RequestDispatcher dispatcher = servletContext.getRequestDispatcher("/check.jsp");
-        dispatcher.forward(request, response);
+        redirectToView(request, response);
     }
 
     private AreaCheckRequest parseRequest(HttpServletRequest request) {
@@ -40,5 +38,16 @@ public class AreaCheckServlet extends HttpServlet {
                 new BigDecimal(request.getParameter("y")),
                 new BigDecimal(request.getParameter("r"))
         );
+    }
+
+    private void redirectToView(HttpServletRequest request, HttpServletResponse response) {
+        ServletContext servletContext = getServletContext();
+        RequestDispatcher dispatcher = servletContext.getRequestDispatcher("/check.jsp");
+
+        try {
+            dispatcher.forward(request, response);
+        } catch (IOException | ServletException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

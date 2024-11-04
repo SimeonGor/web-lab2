@@ -1,11 +1,17 @@
 package com.simeon.lab2.beans;
 
+import jakarta.enterprise.context.SessionScoped;
+import jakarta.inject.Named;
+
 import java.io.Serial;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
+
+@SessionScoped
+@Named(value = "history")
 public class History implements Serializable {
     @Serial
     private static final long serialVersionUID = 4078483457730741479L;

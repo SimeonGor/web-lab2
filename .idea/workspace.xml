@@ -9,14 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee2343a1-c66d-44e7-aaba-6adbede48591" name="Changes" comment="upscale image">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/simeon/lab2/services/CheckUtil.java" afterDir="false" />
+    <list default="true" id="ee2343a1-c66d-44e7-aaba-6adbede48591" name="Changes" comment="feat: refactor AreaCheckServlet, extract method to AreaCheckService">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/simeon/lab2/ControllerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simeon/lab2/ControllerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simeon/lab2/beans/CheckResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simeon/lab2/beans/CheckResult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/simeon/lab2/beans/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simeon/lab2/beans/History.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/simeon/lab2/controller/AreaCheckServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simeon/lab2/controller/AreaCheckServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/simeon/lab2/services/CheckAreaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simeon/lab2/services/AreaCheckService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/simeon/lab2/services/CheckAreaServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simeon/lab2/services/AreaCheckServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simeon/lab2/services/AreaCheckService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simeon/lab2/services/AreaCheckService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/simeon/lab2/services/AreaCheckServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/simeon/lab2/services/AreaCheckServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/table.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/table.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -210,7 +210,7 @@
       <workItem from="1729434871417" duration="908000" />
       <workItem from="1729450674155" duration="48600000" />
       <workItem from="1730127209488" duration="45821000" />
-      <workItem from="1730317748462" duration="7494000" />
+      <workItem from="1730317748462" duration="8663000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -436,7 +436,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730380091540</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="feat: refactor AreaCheckServlet, extract method to AreaCheckService">
+      <option name="closed" value="true" />
+      <created>1730731295828</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1730731295828</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -478,7 +486,8 @@
     <MESSAGE value="refactor" />
     <MESSAGE value="add Readme.md" />
     <MESSAGE value="upscale image" />
-    <option name="LAST_COMMIT_MESSAGE" value="upscale image" />
+    <MESSAGE value="feat: refactor AreaCheckServlet, extract method to AreaCheckService" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: refactor AreaCheckServlet, extract method to AreaCheckService" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
