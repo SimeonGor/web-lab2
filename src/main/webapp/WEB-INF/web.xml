@@ -3,6 +3,7 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
          version="6.0">
+
     <servlet>
         <servlet-name>Dispatcher</servlet-name>
         <servlet-class>com.simeon.lab2.ControllerServlet</servlet-class>
@@ -22,6 +23,16 @@
         <servlet-name>AreaChecker</servlet-name>
         <url-pattern>/local/check</url-pattern>
     </servlet-mapping>
+
+    <filter>
+        <filter-name>LocalFilter</filter-name>
+        <filter-class>com.simeon.lab2.filters.LocalFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>LocalFilter</filter-name>
+        <url-pattern>/local/*</url-pattern>
+    </filter-mapping>
 
     <welcome-file-list>
         <welcome-file>/index.jsp</welcome-file>
